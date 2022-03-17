@@ -1,0 +1,53 @@
+/** @format */
+/* * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+article {
+    flex: 2 2 12em;
+}
+
+nav, aside {
+    flex: 1;
+}
+
+.page-header {
+    background-color: rgb(219, 107, 107);
+}
+
+.content-navigation {
+    background-color: rgb(152, 199, 82);
+}
+
+.content-article{
+    background-color: rgb(98, 58, 163);
+}
+
+.content-aside{
+    background-color: rgb(0, 140, 255);
+}
+
+.page-footer{
+    background-color: rgb(255, 123, 0);
+}
+
+@media screen and (max-width: 500px){
+    main {
+        flex-direction: column;
+    }
+}
